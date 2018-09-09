@@ -1,0 +1,8 @@
+{
+  "name": "guia-farma",
+  "app_id": "5539e9e1",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

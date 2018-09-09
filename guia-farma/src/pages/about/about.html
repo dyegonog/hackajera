@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Medicamentos
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label floating>Buscar</ion-label>
+      <ion-input type="text" [formControl]="myInput"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <button ion-item *ngFor="let r of results | async" (click)="navegarParaListagemDeUnidades(r)">
+      {{r.nome}}
+    </button>
+  </ion-list>
+</ion-content>
